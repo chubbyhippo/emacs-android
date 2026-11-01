@@ -1,4 +1,6 @@
 # emacs-android
+## get emacs.keystore
+https://github.com/emacs-mirror/emacs/raw/refs/heads/master/java/emacs.keystore
 ## sign termux
 ```shell
 apksigner sign --v2-signing-enabled --ks emacs.keystore -debuggable-apk-permitted --ks-pass pass:emacs1 com.termux_<VERSION>.apk
