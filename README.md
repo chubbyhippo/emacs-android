@@ -20,5 +20,6 @@ apksigner sign --v2-signing-enabled --ks emacs.keystore -debuggable-apk-permitte
 
 ## references
 
-https://github.com/johanwiden/termux-for-android-emacs
-https://marek-g.github.io/posts/tips_and_tricks/emacs_on_android/
+https://github.com/johanwiden/termux-for-android-emacs  
+https://marek-g.github.io/posts/tips_and_tricks/emacs_on_android/  
+https://snow-dev.com/posts/Emacs/bring_your_emacs_to_android
