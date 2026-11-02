@@ -2,9 +2,9 @@
 set -eu
 
 KEYSTORE_URL="https://github.com/emacs-mirror/emacs/raw/refs/heads/master/java/emacs.keystore"
-EMACS_URL="https://f-droid.org/repo/org.gnu.emacs_310100002.apk"
+EMACS_URL="https://f-droid.org/repo/org.gnu.emacs_310100003.apk"
 KEYSTORE_FILE="emacs.keystore"
-EMACS_APK_FILE="org.gnu.emacs_310100002.apk"
+EMACS_APK_FILE="org.gnu.emacs_310100003.apk"
 DECODED_DIR="emacs_and_termux"
 OUTPUT_APK="emacs_for_termux.apk"
 KS_PASS="pass:emacs1"
