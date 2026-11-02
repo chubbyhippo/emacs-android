@@ -28,7 +28,7 @@ apksigner sign --v2-signing-enabled --ks emacs.keystore -debuggable-apk-permitte
 
 ## get emacs
 
-https://f-droid.org/repo/org.gnu.emacs_310100002.apk
+https://f-droid.org/repo/org.gnu.emacs_310100003.apk
 
 ## get signed emacs
 
