@@ -6,6 +6,8 @@
 mkdir -p ~/.emacs.d && curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/.emacs.d/early-init.el -o ~/.emacs.d/early-init.el
 ```
 
+## get signed termux
+
 ```shell
 curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/signedtermux.sh | sh
 ```
