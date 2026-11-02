@@ -44,4 +44,5 @@ The script adds `android:sharedUserId="com.termux"` to the Emacs manifest, adds 
 
 https://github.com/johanwiden/termux-for-android-emacs  
 https://marek-g.github.io/posts/tips_and_tricks/emacs_on_android/  
-https://snow-dev.com/posts/Emacs/bring_your_emacs_to_android
+https://snow-dev.com/posts/Emacs/bring_your_emacs_to_android  
+https://www.reddit.com/r/emacs/comments/1q4xhcw/bring_your_emacs_to_android/  
