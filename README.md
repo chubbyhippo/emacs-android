@@ -18,6 +18,12 @@ https://f-droid.org/repo/com.termux_1022.apk
 apksigner sign --v2-signing-enabled --ks emacs.keystore -debuggable-apk-permitted --ks-pass pass:emacs1 com.termux_1022.apk
 ```
 
+## get early-init.el
+
+```shell
+mkdir -p ~/.emacs.d && curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/.emacs.d/early-init.el -o ~/.emacs.d/early-init.el
+```
+
 ## references
 
 https://github.com/johanwiden/termux-for-android-emacs  
