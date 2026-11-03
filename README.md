@@ -2,8 +2,8 @@
 
 ## install early-init.el
 
-```shell
-mkdir -p ~/.emacs.d && curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/.emacs.d/early-init.el -o ~/.emacs.d/early-init.el
+```eshell
+(progn (make-directory (expand-file-name "~/.emacs.d") t) (url-copy-file "https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/.emacs.d/early-init.el" (expand-file-name "~/.emacs.d/early-init.el") t))
 ```
 
 ## get signed termux
@@ -26,9 +26,6 @@ https://f-droid.org/repo/com.termux_1022.apk
 apksigner sign --v2-signing-enabled --ks emacs.keystore -debuggable-apk-permitted --ks-pass pass:emacs1 com.termux_1022.apk
 ```
 
-## get emacs
-
-https://f-droid.org/repo/org.gnu.emacs_310100003.apk
 
 ## get signed emacs
 
