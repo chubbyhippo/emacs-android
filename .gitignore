@@ -8,7 +8,7 @@
 
 # Decoded apktool output folders
 emacs_and_termux/
-com.termux_1022/
+com.termux_*/
 
 # intellij
 .idea/
