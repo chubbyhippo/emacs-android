@@ -8,12 +8,6 @@
 (progn (make-directory (expand-file-name "~/.emacs.d") t) (url-copy-file "https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/.emacs.d/early-init.el" (expand-file-name "~/.emacs.d/early-init.el") t))
 ```
 
-## get signed termux
-
-```shell
-curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/signedtermux.sh | sh
-```
-
 ## get emacs.keystore
 
 https://github.com/emacs-mirror/emacs/raw/refs/heads/master/java/emacs.keystore
@@ -30,6 +24,12 @@ https://f-droid.org/repo/com.termux_1022.apk
 
 ```shell
 apksigner sign --v2-signing-enabled --ks emacs.keystore -debuggable-apk-permitted --ks-pass pass:emacs1 com.termux_1022.apk
+```
+
+## get signed termux
+
+```shell
+curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/signedtermux.sh | sh
 ```
 
 ## get signed emacs
