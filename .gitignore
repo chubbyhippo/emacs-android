@@ -1,0 +1,11 @@
+# Downloaded/built APKs and signatures
+*.apk
+*.apk.idsig
+
+# Signing keys
+*.keystore
+*.jks
+
+# Decoded apktool output folders
+emacs_and_termux/
+com.termux_1022/
