@@ -2,6 +2,8 @@
 
 ## install early-init.el
 
+### run this in M-x eshell
+
 ```eshell
 (progn (make-directory (expand-file-name "~/.emacs.d") t) (url-copy-file "https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/.emacs.d/early-init.el" (expand-file-name "~/.emacs.d/early-init.el") t))
 ```
@@ -17,6 +19,7 @@ curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/head
 https://github.com/emacs-mirror/emacs/raw/refs/heads/master/java/emacs.keystore
 
 ## get emacs
+
 https://ftp.gnu.org/gnu/emacs/android/termux
 
 ## get termux
