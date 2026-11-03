@@ -90,14 +90,14 @@ MANIFEST="$DECODED_DIR/AndroidManifest.xml"
 if grep -q 'android:sharedUserId="com.termux"' "$MANIFEST"; then
   echo "AndroidManifest.xml already has sharedUserId, skipping."
 else
-  sed -i 's|<manifest |<manifest android:sharedUserId="com.termux" android:sharedUserLabel="@string/shared_user_label" |' "$MANIFEST"
+  sed -i 's|<manifest |<manifest android:sharedUserId="com.termux" android:sharedUserLabel="@string/shared_user_name" |' "$MANIFEST"
 fi
 
 STRINGS="$DECODED_DIR/res/values/strings.xml"
-if grep -q 'name="shared_user_label"' "$STRINGS"; then
-  echo "strings.xml already has shared_user_label, skipping."
+if grep -q 'name="shared_user_name"' "$STRINGS"; then
+  sed -i 's|<string name="shared_user_name">[^<]*</string>|<string name="shared_user_name">Termux user</string>|' "$STRINGS"
 else
-  sed -i 's|</resources>|    <string name="shared_user_label">Termux user</string>\n</resources>|' "$STRINGS"
+  sed -i 's|</resources>|    <string name="shared_user_name">Termux user</string>\n</resources>|' "$STRINGS"
 fi
 
 echo "Building $OUTPUT_APK ..."
