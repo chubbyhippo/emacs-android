@@ -16,6 +16,9 @@ curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/head
 
 https://github.com/emacs-mirror/emacs/raw/refs/heads/master/java/emacs.keystore
 
+## get emacs
+https://ftp.gnu.org/gnu/emacs/android/termux
+
 ## get termux
 
 https://f-droid.org/repo/com.termux_1022.apk
@@ -26,16 +29,17 @@ https://f-droid.org/repo/com.termux_1022.apk
 apksigner sign --v2-signing-enabled --ks emacs.keystore -debuggable-apk-permitted --ks-pass pass:emacs1 com.termux_1022.apk
 ```
 
-
 ## get signed emacs
 
-Requires `apktool` and `apksigner` on PATH. Run it after `signedtermux.sh`, because Emacs must be signed with the same keystore as Termux to share its user ID.
+Requires `apktool` and `apksigner` on PATH. Run it after `signedtermux.sh`, because Emacs must be signed with the same
+keystore as Termux to share its user ID.
 
 ```shell
 curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/signedemacs.sh | sh
 ```
 
-The script adds `android:sharedUserId="com.termux"` to the Emacs manifest, adds the `shared_user_label` string, rebuilds the APK as `emacs_for_termux.apk`, and signs it with `emacs.keystore`. 
+The script adds `android:sharedUserId="com.termux"` to the Emacs manifest, adds the `shared_user_label` string, rebuilds
+the APK as `emacs_for_termux.apk`, and signs it with `emacs.keystore`.
 
 ## get both apps
 
