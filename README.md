@@ -40,6 +40,14 @@ curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/head
 
 The script adds `android:sharedUserId="com.termux"` to the Emacs manifest, adds the `shared_user_label` string, rebuilds the APK as `emacs_for_termux.apk`, and signs it with `emacs.keystore`. 
 
+## get both apps
+
+Runs `signedtermux.sh` then `signedemacs.sh` in order. Requires `apktool` and `apksigner` on PATH.
+
+```shell
+curl -fsSL https://raw.githubusercontent.com/chubbyhippo/emacs-android/refs/heads/main/getapps.sh | sh
+```
+
 ## references
 
 https://github.com/johanwiden/termux-for-android-emacs  
